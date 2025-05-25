@@ -6,9 +6,12 @@ plugins {
 }
 
 android {
+
     namespace = "com.example.portalweb"
     compileSdk = flutter.compileSdkVersion
+    buildToolsVersion = "35.0.1" // <-- Esta línea es nueva
     ndkVersion = flutter.ndkVersion
+
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
