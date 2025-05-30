@@ -10,24 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout project files
+      - name: Set up job
         uses: actions/checkout@v4
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.1' # <-- Cambia por tu versión si es otra
+          flutter-version: '3.22.1' # ✅ Flutter compatible con Dart >=3.6.1
 
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Build Flutter Web
+      - name: Build for web
         run: flutter build web
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_KARCITO_DEV }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLUTTER_1A7E2 }}"
           channelId: live
-          projectId: karcito-dev
+          projectId: flutter-1a7e2
