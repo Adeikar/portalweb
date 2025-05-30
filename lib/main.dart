@@ -54,7 +54,12 @@ class _HomeWrapperState extends State<HomeWrapper> {
       case 'Contacto':
         return const Contacto();
       default:
-        return const InicioPage();
+      return InicioPage(onSectionSelected: (section) {
+        setState(() {
+          _currentSection = section;
+    });
+  });
+
     }
   }
 

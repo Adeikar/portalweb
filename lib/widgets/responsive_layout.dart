@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../responsive.dart';
+import '../responsive.dart'; // Este archivo contiene isMobile(), isTablet()
 
 class ResponsiveLayout extends StatelessWidget {
   final Widget mobile;

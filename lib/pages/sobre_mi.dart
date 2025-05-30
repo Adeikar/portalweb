@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../responsive.dart';
 import '/widgets/responsive_layout.dart';
 
 class SobreMi extends StatelessWidget {
