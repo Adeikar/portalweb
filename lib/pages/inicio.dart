@@ -73,7 +73,7 @@ class InicioPage extends StatelessWidget {
                   ResponsiveLayout(
                     mobile: Column(
                       children: [
-                        _buildCounter('10+', 'Proyectos'),
+                        _buildCounter('5+', 'Proyectos'),
                         const SizedBox(height: 16),
                         _buildCounter('3', 'Años de experiencia'),
                         const SizedBox(height: 16),
