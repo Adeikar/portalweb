@@ -83,7 +83,7 @@ class InicioPage extends StatelessWidget {
                     tablet: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        _buildCounter('10+', 'Proyectos'),
+                        _buildCounter('5+', 'Proyectos'),
                         _buildCounter('3', 'Años de experiencia'),
                         _buildCounter('5+', 'Tecnologías dominadas'),
                       ],
@@ -91,7 +91,7 @@ class InicioPage extends StatelessWidget {
                     desktop: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        _buildCounter('10+', 'Proyectos'),
+                        _buildCounter('5+', 'Proyectos'),
                         _buildCounter('3', 'Años de experiencia'),
                         _buildCounter('5+', 'Tecnologías dominadas'),
                       ],

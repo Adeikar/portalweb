@@ -88,15 +88,18 @@ class _HomeWrapperState extends State<HomeWrapper> {
         ),
       ) : null,
       body: Column(
-        children: [
-          NavBar(onSectionSelected: (section) {
-            setState(() {
-              _currentSection = section;
-            });
-          }),
-          Expanded(child: _getSectionWidget()),
-        ],
-      ),
+          children: [
+            NavBar(
+              onSectionSelected: (section) {
+                setState(() {
+                  _currentSection = section;
+                });
+              },
+              currentSection: _currentSection, // ✅ ahora está dentro de NavBar
+            ),
+            Expanded(child: _getSectionWidget()),
+          ],
+        ),
     );
   }
 
