@@ -147,7 +147,7 @@ class SobreMi extends StatelessWidget {
 
               // Formación y enfoque actual
               Text(
-                '🎓 Formación: Universidad Pública de El Alto (UPEA), cursos avanzados en Laravel, Firebase y Flutter.',
+                '🎓 Formación: Universidad Privada del Valle, cursos avanzados en Laravel, Firebase y Flutter.',
                 style: TextStyle(
                   color: Colors.white70,
                   fontSize: isMobile ? 14 : 16,
